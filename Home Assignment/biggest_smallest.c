@@ -1,0 +1,25 @@
+// 1) Write a program that accepts all elements of an integer array and finds out maximum and minimum element of the array.
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(){
+    int n, biggest, smallest;
+    printf("Enter number of elemnets: ");
+    scanf("%d", &n);
+    int arr[n];
+    for(int i = 0; i < n; i++){
+        printf("Enter element for position %d : ", (i+1));
+        scanf("%d", &arr[i]);
+        if(i == 0){
+            biggest = arr[0];
+            smallest = arr[0];
+            }
+        if(arr[i] > biggest)
+            biggest = arr[i];
+        if(arr[i] < smallest)
+            smallest = arr[i];
+    }
+    printf("Biggest : %d \nSmallest : %d", biggest, smallest);
+    return 0;
+}
