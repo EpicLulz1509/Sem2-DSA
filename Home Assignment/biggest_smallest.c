@@ -23,3 +23,13 @@ int main(){
     printf("Biggest : %d \nSmallest : %d", biggest, smallest);
     return 0;
 }
+
+//OUTPUT:
+// Enter number of elemnets: 5
+// Enter element for position 1 : 1
+// Enter element for position 2 : 5
+// Enter element for position 3 : 0
+// Enter element for position 4 : 9
+// Enter element for position 5 : 6
+// Biggest : 9 
+// Smallest : 0
