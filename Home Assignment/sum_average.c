@@ -8,8 +8,8 @@ int main(){
     printf("Enter number of elemnets: ");
     scanf("%d", &n);
     int arr[n];
+    printf("Enter elements: \n");
     for(int i = 0; i < n; i++){
-        printf("Enter element for position %d : ", (i+1));
         scanf("%d", &arr[i]);
         sum += arr[i];
     }
@@ -17,3 +17,14 @@ int main(){
     printf("Sum : %d \nAverage : %g", sum, average);
     return 0;
 }
+
+// OUTPUT:
+// Enter number of elemnets: 5
+// Enter elements: 
+// 1 
+// 5
+// 9
+// 3
+// 2
+// Sum : 20 
+// Average : 4
