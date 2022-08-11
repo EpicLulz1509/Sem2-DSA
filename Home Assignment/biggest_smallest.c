@@ -24,6 +24,7 @@ int main(){
     return 0;
 }
 
+
 // OUTPUT:
 // Enter number of elemnets: 5
 // Enter element for position 1 : 1

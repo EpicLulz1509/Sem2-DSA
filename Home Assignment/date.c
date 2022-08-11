@@ -30,3 +30,9 @@ int main(){
 
 
 }
+
+// OUTPUT:
+// Enter day: 15
+// Enter month: 9
+// Enter year: 2003
+// Age is: 18

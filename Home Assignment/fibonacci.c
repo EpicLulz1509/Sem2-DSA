@@ -12,7 +12,6 @@ int main(){
         b = a;
         a = sum;
         sum = a + b;
-        
     }
     printf("First 10 fibonacci numebers are: ");
     for(int i = 0; i < n; i++){
@@ -20,3 +19,6 @@ int main(){
     }
     return 0;
 }
+
+// OUTPUT:
+// First 10 fibonacci numebers are: 1 1 2 3 5 8 13 21 34 55 

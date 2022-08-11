@@ -1,4 +1,4 @@
-//9) Write a program that accepts two integer matrixes, mattiplies them and store them in a third matrix.
+//9) Write a program to read a matrix and check it for Identity Matrix.
 
 #include<stdio.h>
 #include<stdlib.h>
@@ -13,7 +13,7 @@ int main(){
     int mat[r][c];
     for(int i = 0; i < r; i++){
         for(int j = 0; j < c; j++){
-            printf("Enter element for position %d %d: ", (i+1), (j+1));
+            printf("%d %d: ", (i+1), (j+1));
             scanf("%d", &mat[i][j]);
             if(i == j && mat[i][j] != 1)
                 count++;
@@ -26,4 +26,14 @@ int main(){
         printf("Not an identity matrix");
     else
         printf("Identity matrix");
+    
+    return 0;
 }
+
+// OUTPUT:
+// Enter number of rows and columns: 2 2
+// 1 1: 1
+// 1 2: 0
+// 2 1: 0
+// 2 2: 1
+// Identity matrix

@@ -13,7 +13,7 @@ int main(){
     int mat[r][c];
     for(int i = 0; i < r; i++){
         for(int j = 0; j < c; j++){
-            printf("Enter element for position %d %d: ", (i+1), (j+1));
+            printf("%d %d: ", (i+1), (j+1));
             scanf("%d", &mat[i][j]);
         }
     }
@@ -25,4 +25,16 @@ int main(){
         }
         printf("\n");
     }
+
+
 }
+
+// OUTPUT:
+// Enter number of rows and columns: 2 2
+// 1 1: 1
+// 1 2: 2
+// 2 1: 3
+// 2 2: 4
+// Transpose is: 
+// 1 3
+// 2 4

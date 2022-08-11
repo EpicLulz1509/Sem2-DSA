@@ -13,7 +13,7 @@ int main(){
     int mat1[r][c];
     for(int i = 0; i < r; i++){
         for(int j = 0; j < c; j++){
-            printf("Enter element for position %d %d: ", (i+1), (j+1));
+            printf("%d %d: ", (i+1), (j+1));
             scanf("%d", &mat1[i][j]);
         }
     }
@@ -22,7 +22,7 @@ int main(){
     int mat2[r][c];
     for(int i = 0; i < r; i++){
         for(int j = 0; j < c; j++){
-            printf("Enter element for position %d %d: ", (i+1), (j+1));
+            printf("%d %d: ", (i+1), (j+1));
             scanf("%d", &mat2[i][j]);
         }
     }
@@ -43,3 +43,19 @@ int main(){
         printf("\n");
     }
 }
+
+// OUTPUT:
+// Enter number of rows and columns: 2 2
+// FIRST MATRIX 
+// 1 1: 6
+// 1 2: 9
+// 2 1: 1
+// 2 2: 5
+// SECOND MATRIX 
+// 1 1: 3
+// 1 2: 4
+// 2 1: 7
+// 2 2: 2
+// Sum is: 
+// 9 13
+// 8 7

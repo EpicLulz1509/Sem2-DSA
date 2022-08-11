@@ -4,45 +4,27 @@
 #include<stdlib.h>
 
 int main(){
-    int n, n1, n2;
-
-    printf("FIRST ARRAY \n");
+    int n;
     printf("Enter number of elemnets: ");
-    scanf("%d", &n1);
-    int arr1[n1];
-    for(int i = 0; i < n1; i++){
-        printf("Enter element for position %d : ", (i+1));
+    scanf("%d", &n);
+
+    printf("FIRST ARRAY \n");    
+    int arr1[n];
+    printf("Enter elements: \n");
+    for(int i = 0; i < n; i++){
         scanf("%d", &arr1[i]);
     }
 
     printf("SECOND ARRAY \n");
-    printf("Enter number of elemnets: ");
-    scanf("%d", &n2);
-    int arr2[n2];
-    for(int i = 0; i < n2; i++){
-        printf("Enter element for position %d : ", (i+1));
+    int arr2[n];
+    printf("Enter elements: \n");
+    for(int i = 0; i < n; i++){
         scanf("%d", &arr2[i]);
     }
 
     int arr[n];
-
-    if(n1 < n2){
-        int n = n2;
-        for(int i = 0; i < n1; i++){
-            arr[i] = arr1[i] + arr2[i];
-        }
-        for(int i = n1; i < n2; i++){
-            arr[i] = arr2[i];
-        }
-    }
-    else{
-        int n = n1;
-        for(int i = 0; i < n2; i++){
-            arr[i] = arr1[i] + arr2[i];
-        }
-        for(int i = n1; i < n2; i++){
-            arr[i] = arr1[i];
-        }
+    for(int i = 0; i < n; i++){
+        arr[i] = arr1[i] + arr2[i];
     }
 
     printf("Sum is: \n");    
@@ -50,3 +32,18 @@ int main(){
         printf("%d ", arr[i]);
     }
 }
+
+// OUTPUT:
+// Enter number of elemnets: 3
+// FIRST ARRAY 
+// Enter elements:
+// 1
+// 2
+// 3
+// SECOND ARRAY 
+// Enter elements:
+// 4
+// 5
+// 6
+// Sum is: 
+// 5 7 9

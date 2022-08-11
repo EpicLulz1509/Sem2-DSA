@@ -38,3 +38,11 @@ int main(){
     printf("Total feet: %d \n", d3->feet);
 
 }
+
+// OUTPUT:
+// Enter inches for first distance: 9
+// Enter feet for first distance: 5
+// Enter inches for second distance: 11
+// Enter feet for second distance: 4
+// Total inches: 8 
+// Total feet: 10

@@ -23,3 +23,11 @@ int main(){
             printf("%d is not a prime number. \n", i);
     }
 }
+
+// OUTPUT:
+// Enter range of numbers: 20 25
+// 20 is not a prime number. 
+// 21 is not a prime number.
+// 22 is not a prime number.
+// 23 is a prime number.
+// 24 is not a prime number.

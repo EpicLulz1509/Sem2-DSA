@@ -13,8 +13,6 @@ int main(){
     for(l1 = 0; str[l1] != '\0'; l1++);
     for(l2 = 0; word[l2] != '\0'; l2++);
 
-    printf("%d %d", l1, l2);
-
     for(i=0; i < l1; i++){
         int temp = i;
         for(j = 0; j < l2; j++){
@@ -33,3 +31,8 @@ int main(){
     printf("New String: %s", str);
     return 0;
 }
+
+// OUTPUT:
+// Enter the String: Hello how are you
+// Enter a Word: how
+// New String: Hello  are you

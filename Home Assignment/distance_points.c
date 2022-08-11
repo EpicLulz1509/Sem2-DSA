@@ -16,3 +16,9 @@ int main()
 
     return 0;
 }
+
+// OUTPUT:
+// Enter 2 points 
+// 1 2
+// 3 4
+// Distance between 2 points: 2.82843
