@@ -1,7 +1,7 @@
 //18) WAP Program to Remove Given Word from a String
 
 #include<stdio.h>
-#include<conio.h>
+#include<stdlib.h>
 int main(){
     char str[100], word[20];
     int i, j, l1, l2;
@@ -13,7 +13,7 @@ int main(){
     for(l1 = 0; str[l1] != '\0'; l1++);
     for(l2 = 0; word[l2] != '\0'; l2++);
 
-    for(i=0; i < l1; i++){
+    for(i = 0; i < l1; i++){
         int temp = i;
         for(j = 0; j < l2; j++){
             if(str[i] == word[j])

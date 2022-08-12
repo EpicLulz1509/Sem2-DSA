@@ -9,23 +9,26 @@ struct Object{
 
 int main(){
 
-    int n = 2;
-    struct Object s[n];
+    struct Object s1, s2;
 
     printf("Enter a number: ");
-    scanf("%d", &s[0].num);
+    scanf("%d", &s1.num);
 
-    s[1].num = s[0].num;
+    s2.num = s1.num;
 
-    for(int i = 0; i < n; i++){
-        printf("Number in structure variable %d is : %d \n", (i+1), s[i].num);
-    }
+    printf("Number in structure variable 1 is : %d \n", s1.num);
+    printf("Number in structure variable 2 is : %d \n", s2.num);
 
+    if(s2.num == s2.num)
+        printf("They are equal.");
+    else
+        printf("They are not equal.");
 
     return 0;
 }
 
 // OUTPUT:
-// Enter a number: 5
-// Number in structure variable 1 is : 5 
-// Number in structure variable 2 is : 5
+// Enter a number: 12
+// Number in structure variable 1 is : 12 
+// Number in structure variable 2 is : 12
+// They are equal.

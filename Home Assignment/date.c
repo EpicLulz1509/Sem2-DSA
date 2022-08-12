@@ -1,3 +1,5 @@
+//14) Write a program to declare a structure DATE containing day, month and year. Find the age of a person if the date of birth and current date is given.
+
 #include<stdio.h>
 #include<stdlib.h>
 #include <time.h>
@@ -10,12 +12,8 @@ struct DATE{
 
 int main(){
     struct DATE d;
-    printf("Enter day: ");
-    scanf("%d", &d.day);
-    printf("Enter month: ");
-    scanf("%d", &d.month);
-    printf("Enter year: ");
-    scanf("%d", &d.year);
+    printf("Enter day, month, year: ");
+    scanf("%d %d %d", &d.day, &d.month, &d.year);
 
     int tm_mday, tm_mon, year = 2022;
     int  age = year - d.year;
@@ -27,12 +25,11 @@ int main(){
        
 
     printf("Age is: %d", age);
+    return 0;
 
 
 }
 
 // OUTPUT:
-// Enter day: 15
-// Enter month: 9
-// Enter year: 2003
+// Enter day, month, year: 15 9 2003
 // Age is: 18
